@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nerfacto Trainer</title>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<h1>Nerfacto Trainer</h1>
+<p>
+This application allows you to train a NeRF model using the Nerfacto trainer.
+</p>
+<form action="/train" method="POST" enctype="multipart/form-data">
+<label for="data">Data:</label>
+<input type="file" id="data" name="data">
+<br>
+<label for="config">Config:</label>
+<input type="file" id="config" name="config">
+<br>
+<input type="submit" value="Train">
+</form>
+</body>
+</html>
+
+
